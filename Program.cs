@@ -13,7 +13,7 @@ static class Program
         var strBuilder = new StringBuilder();
         strBuilder
             .Append("Hello, World")
-            .Append(DateTime.UtcNow.Millisecond % 2 == 0 ? "??" : '!');
+            .Append(DateTime.UtcNow.Millisecond % 2 == 0 ? "??" : '!'); // '!' makes the analyzer to detect a value type boxing warning, that in turn triggers the NRE
 
         Console.WriteLine(strBuilder.ToString());
     }
