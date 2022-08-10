@@ -1,0 +1,5 @@
+root=true
+
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
+[*.cs]
+dotnet_diagnostic.rcs1198.severity=error
